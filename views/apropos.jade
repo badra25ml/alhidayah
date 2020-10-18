@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  header
+      nav#navbar
+        .container
+          h1.logo
+            a(href='/') ALHIDAYAH CLUB
+          ul
+            li
+              a(href='/') Accueil
+            li
+              a.current(href='apropos') A Propos de Nous
+            li
+              a(href='contact') Nous Contacter
+    section#about-info.bg-light.py-3
+      .container
+        .info-left
+          h1.l-heading
+            span.text-primary  A propos 
+            | De Alhidayah 
+            | Club
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex eius amet mollitia quos, dolores repudiandae a vero non culpa enim recusandae exercitationem dolor praesentium aliquid? Aperiam ipsam sequi sunt soluta.
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam nobis expedita laborum quidem consequuntur doloribus aliquam, voluptatum ipsum impedit.
+        .info-right
+          img(src='./img/photo-2.jpg', alt='')
+    .clr
+    section#testimonials.py-3
+      .container
+        h2.l-heading Ce que disent nos etudiants
+        .testimonial.bg-primary
+          img(src='./img/person-1.jpg', alt='Fatim')
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid labore ipsam, est quisquam delectus cumque repellat, commodi repudiandae molestiae, sapiente fuga quae pariatur! Ipsa possimus libero quibusdam sit vel itaque nam, ut voluptatem. Natus blanditiis officiis sequi officia incidunt.
+        .testimonial.bg-primary
+          img(src='./img/person-2.jpg', alt='Mohamed')
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid labore ipsam, est quisquam delectus cumque repellat, commodi repudiandae molestiae, sapiente fuga quae pariatur! Ipsa possimus libero quibusdam sit vel itaque nam, ut voluptatem. Natus blanditiis officiis sequi officia incidunt.

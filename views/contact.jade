@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  header
+      nav#navbar
+        .container
+          h1.logo
+            a(href='/') ALHIDAYAH CLUB
+          ul
+            li
+              a(href='/') Accueil
+            li
+              a(href='apropos') A Propos de Nous
+            li
+              a.current(href='contact') Nous Contacter
+    section#contact-form.py-3
+      .container
+        h1.l-heading
+          span.text-primary Nous contacter
+        p Veuillez remplir la forme ci-dessous pour nous contacter
+        form(action='process.js')
+          .form-group
+            label(for='name') Nom
+            input#name(type='text', name='name')
+          .form-group
+            label(for='email') Email
+            input#email(type='email', name='email')
+          .form-group
+            label(for='message') Message
+            textarea#message(type='text', name='message')
+          button.btn(type='submit') Soumet
+    section#contact-info.bg-dark
+      .box
+        i.fas.fa-hotel.fa-3x
+        h3 Location
+        p Bamako, Mali
+      .box
+        i.fas.fa-phone.fa-3x
+        h3 Numero de Telephone
+        p (---) ----
+      .box
+        i.fas.fa-envelope.fa-3x
+        h3 Adresse Email
+        p djeneba@alhidayah.club
