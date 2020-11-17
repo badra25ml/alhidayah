@@ -1,48 +1,47 @@
 extends layout
 
 block content
-  header
-      nav#navbar
-        .container
-          h1.logo
-            a(href='/') ALHIDAYAH CLUB
-          ul
-            li
-              a.current(href='/') Accueil
-            li
-              a(href='apropos') A Propos de Nous
-            li
-              a(href='contact') Nous Contacter
+  .gbb-row-wrapper
+    .gbb-row.bg-size-default
+      .bb-inner.remove_padding
+        .bb-container.container
+          .row
+            .row-wrapper.clearfix
+              .gsc-column.col-lg-12.col-md-12.col-sm-12.col-xs-12
+      br
       #showcase
         .container
           .showcase-content
-            h1
-              span.text-primary  Bienvenu 
-              | dans les Ateliers 
-              br 
-              | Al-Hidayah
+            //- h1
+            //-   span.text-primary  Bienvenu 
+            //-   | dans les Ateliers 
+            //-   br 
+            //-   | Hidayah
             p.lead
-              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rerum corporis voluptatum doloremque consequatur. Tenetur.
-            a.btn(href='about') Ce que nous faisons
-    section#home-info.bg-dark
-      .info-img
-      .info-content
-        h2
-          span.text-primary L'histoire
-          |  de Notre Club
-        p
-          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae rem laboriosam, ex molestias, laudantium debitis quis soluta et sapiente perferendis a quisquam voluptatibus esse impedit obcaecati aliquid. Tenetur, eius obcaecati nemo excepturi sed harum aperiam temporibus asperiores rem repellendus!
-        a.btn.btn-light(href='about') Lire plus
-    section#features
-      .box.bg-light
-        i.fas.fa-hotel.fa-3x
-        h3 Accès Facile
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
-      .box.bg-primary
-        i.fas.fa-book-reader.fa-3x
-        h3 Bibliothèque
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
-      .box.bg-light
-        i.fas.fa-frog.fa-3x
-        h3 Eco Tours
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
+              | Apprendre pour comprendre, Comprendre pour aimer, Aimer pour pratiquer.
+
+            a.btn(href='/apropos') Découvrez ce que nous faisons
+      br
+      section#home-info.bg-dark
+       .items
+        .info-img
+        .info-content
+          h2
+            span.text-primary L'histoire
+            |  de Notre Club
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, vitae rem laboriosam, ex molestias, laudantium debitis quis soluta et sapiente perferendis a quisquam voluptatibus esse impedit obcaecati aliquid. Tenetur, eius obcaecati nemo excepturi sed harum aperiam temporibus asperiores rem repellendus!
+          a.btn.btn-light(href='/apropos') Lire plus
+      section#features
+        .box.bg-light
+          i.fas.fa-hotel.fa-3x
+          h3 Accès Facile
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
+        .box.bg-primary
+          i.fas.fa-book-reader.fa-3x
+          h3 Bibliothèque
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
+        .box.bg-light
+          i.fas.fa-frog.fa-3x
+          h3 Eco Tours
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sint.
