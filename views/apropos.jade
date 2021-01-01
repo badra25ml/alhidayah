@@ -1,33 +1,29 @@
 extends layout
-
 block content
-  header
-
-    section#about-info.bg-light.py-3
-      .container
-        .info-left
+    header.masthead
+      .container.h-100
+        .row.h-100.align-items-center.justify-content-center.text-center
+          .col-lg-10.align-self-end
+          .info-left
           h1.l-heading
+            br
             span.text-primary  A propos 
             | De Alhidayah 
             | Club
-          p
-            | Aux ateliers Hidayah, l’éducation et l’épanouissement de nos enfants est notre priorité! 
-          p
-            | Les ateliers Hidayah sont nés il y a deux ans d'un long rêve, celui de recréer l'ambiance chaleureuse du Sunday School de Masjid Al Hidayah à Atlanta pour nos enfants ici au Mali.
-          p
-            | Nous croyons qu'il faut enseigner la religion, la culture et l'éthique de la vie à nos enfants avec amour pour les préparer à une vie pleine de défis.
-          p
-            | Aux ateliers Hidayah, les enfants apprendront l'Islam, le comment, le pourquoi d'une manière qui les fera aimer et vouloir y exceller. 
-          p
-            | Nous proposons également à nos enfants un club de lecture bilingue pour les aider à voir les livres à nouveau comme une source d'apprentissage et de divertissement.
-          p
-            | Notre club de lecture est conçu pour fournir aux enfants des outils pour renforcer leur connaissance de la langue française ainsi que de la langue anglaise tout en s'évadant dans les merveilleuses histoires des livres. 
-          p
-            | Les ateliers Hidayah offrent un juste équilibre entre le plaisir et le sérieux pour garantir une expérience d'apprentissage réussie.
-          p
-            | Nous sommes situés à Djelibougou, non loin de Malitel.
-          p
-            | Veuillez nous contacter pour une visite ou pour plus d'informations.
+            br
+            br
+          p.text-uppercase.text-white.font-weight-bold(style="text-align:left") Aux ateliers Hidayah, l’éducation et l’épanouissement de nos enfants est notre priorité! 
+           | Les ateliers Hidayah sont nés il y a deux ans d'un long rêve, celui de recréer l'ambiance chaleureuse du Sunday School de Masjid Al Hidayah à Atlanta pour nos enfants ici au Mali.
+           | Nous croyons qu'il faut enseigner la religion, la culture et l'éthique de la vie à nos enfants avec amour pour les préparer à une vie pleine de défis.
+           | Aux ateliers Hidayah, les enfants apprendront l'Islam, le comment, le pourquoi d'une manière qui les fera aimer et vouloir y exceller. 
+           | Nous proposons également à nos enfants un club de lecture bilingue pour les aider à voir les livres à nouveau comme une source d'apprentissage et de divertissement.
+           | Notre club de lecture est conçu pour fournir aux enfants des outils pour renforcer leur connaissance de la langue française ainsi que de la langue anglaise tout en s'évadant dans les merveilleuses histoires des livres. 
+           | Les ateliers Hidayah offrent un juste équilibre entre le plaisir et le sérieux pour garantir une expérience d'apprentissage réussie.
+           | Nous sommes situés à Djelibougou, non loin de Malitel.
+          br
+          br
+          hr.divider.my-4
+    
         .info-right
           img(src='./img/photo-2.jpg', alt='')
     .clr
@@ -42,3 +38,4 @@ block content
           img(src='./img/person-2.jpg', alt='Mohamed')
           p
             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid labore ipsam, est quisquam delectus cumque repellat, commodi repudiandae molestiae, sapiente fuga quae pariatur! Ipsa possimus libero quibusdam sit vel itaque nam, ut voluptatem. Natus blanditiis officiis sequi officia incidunt.
+  block content
